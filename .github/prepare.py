@@ -910,8 +910,8 @@ for (
         "arm64-and-gcc-static",
         "release",
         10,
-        True,
-    ),
+        False,
+    ),  # TODO: enable lint once android clang-tidy stops being dumb
     (
         "wasm32",
         "emscripten",

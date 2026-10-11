@@ -13,6 +13,13 @@ on:
   pull_request:
     branches:
       - '*'
+  workflow_dispatch:
+
+# the default GITHUB_TOKEN for new repositories is read-only; creating draft
+# releases (prepare job) and uploading release assets (build job) need
+# contents: write
+permissions:
+  contents: write
 
 jobs:
   prepare:
