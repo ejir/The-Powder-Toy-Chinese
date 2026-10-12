@@ -12,23 +12,6 @@ The Powder Toy is a free physics sandbox game, which simulates air pressure and 
 
 There is a Lua API – you can automate your work or even make plugins for the game. The Powder Toy is free and the source code is distributed under the GNU General Public License, so you can modify the game yourself or help with development.
 
-Image to save converter / 图片转沙盘
-===========================================================================
-
-This repository includes `tools/img2save.py`, a standalone script that converts an
-image into a Powder Toy `.cps` save. It supports true-colour decoration and
-real-element palette modes. PNG works with the Python standard library alone;
-install Pillow to read JPEG, WebP and other image formats.
-
-本仓库提供了一个将图片转换为粉末玩具沙盘的脚本：
-
-```bash
-python3 tools/img2save.py 图片.png
-```
-
-生成的 `.cps` 文件可直接拖入游戏窗口。详细参数和示例请看
-[`tools/img2save.md`](tools/img2save.md)。
-
 Build instructions
 ===========================================================================
 
